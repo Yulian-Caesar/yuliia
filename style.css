@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 40px;
+}
+
+a {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.m-accent {
+    color: #ff6b08;
+}
+
+.title {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.link {
+    color: #ff6b08;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 20px 2px rgb(0 0 0 / 15%);
+}
+
+.sidebar {
+    background: #1e2939;
+    color: #ffffff;
+    padding: 40px;
+    max-width: 370px;
+    width: 100%;
+    flex: none;
+}
+
+.sidebar__image {
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 40px;
+}
+
+.column {
+    
+}
+
+.column + .column {
+    margin-top: 40px;
+}
+
+.column__title {
+    font-size: 22px;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list {
+   
+}
+
+.list__item {
+    position: relative;
+    padding-left: 15px;
+    line-height: 1.2;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.list__item:before {
+    content: "";
+    background: #ff6b08;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.list__link {
+    position: relative;
+    color: #7a818a;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.list__link:hover {
+    transition: .5s;
+    color: #ffffff;
+}
+
+.block {
+    margin-top: 40px;
+}
+
+.block__title {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.block__date {
+    display: block;
+    margin-bottom: 10px;
+    color: #808080;
+    font-size: 12px;
+}
+
+.block__item {
+    margin-bottom: 20px;
+}
+
+.block__item-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        margin: 0;
+    }
+
+    .sidebar,
+    .content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+       max-width: 100%;
+    }
+}
