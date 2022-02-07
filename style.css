@@ -68,6 +68,11 @@ h3 {
     margin-bottom: 20px;
 }
 
+.sidebar__image img {
+    display: block;
+    margin: 0 auto;
+}
+
 .content {
     padding: 40px;
 }
